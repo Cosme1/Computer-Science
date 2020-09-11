@@ -4,19 +4,6 @@ import java.util.Scanner;
 public class GeometricSequence {
     public static void main(String[] args) {
         clearScreen();
-        /*
-        System.out.println("Enter the first term of your arithmetic sequence: ");
-        Scanner sc = new Scanner(System.in);
-        double u1 = sc.nextDouble();
-
-        System.out.println("Enter the second term of your arithmetic sequence: ");
-        sc = new Scanner(System.in);
-        double u2 = sc.nextDouble();
-
-        System.out.println("Enter the thrid term of your arithmetic sequence: ");
-        sc = new Scanner(System.in);
-        double u3 = sc.nextDouble();
-        */
 
         
         System.out.println("How many terms do you want inside your sequence?");

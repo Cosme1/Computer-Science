@@ -42,6 +42,7 @@ public class GeometricSequence {
         System.out.println("The formula of the Sequence is: Un = " + array[0] + "+(n-1)" + difference);
         System.out.println("For example if n = 100, the formula is: U100 = " + array[0] + "+(100-1)" + difference);
         System.out.println("In this case, U100 then equals " + U100);
+        scanner.close();
     }
 
     public static void clearScreen() {

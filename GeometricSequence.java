@@ -5,9 +5,11 @@ public class GeometricSequence {
     public static void main(String[] args) {
         clearScreen();
 
-        
         System.out.println("How many terms do you want inside your sequence?");
         Scanner scanner = new Scanner(System.in);
+        if (scanner.nextInt() <= 1){
+            System.out.println("The number of terms need to be higher than 1");
+        }
         int terms = scanner.nextInt();
         int array[] = new int[terms];
         System.out.println("Enter the first few terms of your arithmetic sequence: ");

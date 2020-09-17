@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "console": "externalTerminal",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Circle<Computer-Science_29728a41>",
+            "request": "launch",
+            "mainClass": "Circle",
+            "projectName": "Computer-Science_29728a41"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GeometricSequence<Computer-Science_29728a41>",
+            "request": "launch",
+            "mainClass": "GeometricSequence",
+            "projectName": "Computer-Science_29728a41"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-QuadraticSequence<Computer-Science_29728a41>",
+            "request": "launch",
+            "mainClass": "QuadraticSequence",
+            "projectName": "Computer-Science_29728a41"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GroupChat",
+            "request": "launch",
+            "mainClass": "GroupChat"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-circle",
+            "request": "launch",
+            "mainClass": "circle"
+        }
+    ]
+}

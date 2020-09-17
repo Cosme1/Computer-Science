@@ -5,18 +5,22 @@ public class Circle {
         System.out.println("Enter a radius: ");
         Scanner scanner = new Scanner(System.in);
         int radius = scanner.nextInt();
-        findRadius(radius);
-        findParameter(radius);
+        
+
+        for (int i = 0; i < 20; i++){
+            System.out.println("The area of the circle is " + findRadius(i));
+            System.out.println("The parameter of the circle is " + findParameter(i));
+        }
     }
 
-    public static void findRadius(int r){
+     static double findRadius(double r){
         double ans = Math.PI * r * r;
-        System.out.println("The radius is " + ans);
+        return ans;
         
     }
 
-    public static void findParameter(int r){
+     static double findParameter(double r){
         double ans = 2 * Math.PI * r;
-        System.out.println("The circumference is " + ans);
+        return ans;
     }
 }

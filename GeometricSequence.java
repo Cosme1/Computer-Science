@@ -3,13 +3,15 @@ import java.util.Scanner;
 
 public class GeometricSequence {
     public static void main(String[] args) {
-        clearScreen();
+        clearScreen(50);
 
         System.out.println("How many terms do you want inside your sequence?");
         Scanner scanner = new Scanner(System.in);
+        /*
         if (scanner.nextInt() <= 1){
             System.out.println("The number of terms need to be higher than 1");
         }
+        */
         int terms = scanner.nextInt();
         int array[] = new int[terms];
         System.out.println("Enter the first few terms of your arithmetic sequence: ");
@@ -23,7 +25,7 @@ public class GeometricSequence {
         int nextTerm = array[2] + difference;
         int U100 = array[0] + 99 * difference;
         
-        clearScreen();
+        clearScreen(50);
         System.out.println("Results:");
         System.out.println("Your Sequence is " + Arrays.toString(array));
         System.out.println("The difference of the Sequence is " + difference);
@@ -34,7 +36,7 @@ public class GeometricSequence {
         scanner.close();
     }
 
-    public static void clearScreen() {
-        System.out.println(new String(new char[50]).replace("\0", "\r\n"));
+    public static void clearScreen(int i) {
+        System.out.println(new String(new char[i]).replace("\0", "\r\n"));
     }
 }

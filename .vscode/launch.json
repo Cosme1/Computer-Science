@@ -8,7 +8,7 @@
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "console": "externalTerminal",
+            "console": "integratedTerminal",
             "mainClass": "${file}"
         },
         {

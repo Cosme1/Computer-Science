@@ -7,8 +7,11 @@ public class Fibonaci {
         Scanner scanner = new Scanner(System.in);
         int terms = scanner.nextInt();
         int array[] = new int[terms];
-        for (int i = 0; i <= terms; i++){
-            
+        array[0] = 1;
+        array[1] = 1;
+        for (int i = 2; i < terms; i++){
+            array[i] = array[i - 2] + array[i - 1];
         }
+        System.out.println("The Fibonaci sequence looks like this: " + Arrays.toString(array));
     }
 }

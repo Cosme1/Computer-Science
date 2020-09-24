@@ -6,8 +6,8 @@ public class recursion5to1 {
 
     static void number(int x){
         if (x >= 1){
-            number(x - 1);
             System.out.println(x);
+            number(x - 1);
         }
         
     }

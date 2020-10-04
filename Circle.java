@@ -6,11 +6,14 @@ public class Circle {
         Scanner scanner = new Scanner(System.in);
         int radius = scanner.nextInt();
         
-
+        System.out.println("The area of the circle is " + findRadius(radius));
+        System.out.println("The parameter of the circle is " + findParameter(radius));
+        /*
         for (int i = 0; i < 20; i++){
             System.out.println("The area of the circle is " + findRadius(i));
             System.out.println("The parameter of the circle is " + findParameter(i));
         }
+        */
     }
 
      static double findRadius(double r){

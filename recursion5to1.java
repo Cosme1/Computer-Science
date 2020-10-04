@@ -3,12 +3,10 @@ public class recursion5to1 {
         int x = 5;
         number(x);
     }
-
     static void number(int x){
         if (x >= 1){
             System.out.println(x);
             number(x - 1);
         }
-        
     }
 }

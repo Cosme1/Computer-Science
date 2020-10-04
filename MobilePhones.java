@@ -1,12 +1,10 @@
 import java.util.*;
 
 public class MobilePhones {
-    static int numOfSpeakers = 0;
     public static void main(String[] args) {
-        int numOfPhones;
         System.out.println("Number of Phones: ");
         Scanner scan = new Scanner(System.in);
-        numOfPhones = scan.nextInt();
+        int numOfPhones = scan.nextInt();
         System.out.println(speaker(numOfPhones));
     }
 
@@ -16,14 +14,10 @@ public class MobilePhones {
             return 0;
 
         if (numOfPhones % 2 == 0){
-            numOfSpeakers = numOfSpeakers + 2;
-            speaker (numOfPhones - 1);
+            return (2 + speaker (numOfPhones - 1));
         }
         else {
-            numOfSpeakers++;
-            speaker(numOfPhones - 1);
+            return (1 + speaker(numOfPhones - 1));
         }
-
-        return (speaker(numOfPhones - 1));
     }
 }

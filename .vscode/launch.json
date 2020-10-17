@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FactorialAndCombination",
+            "request": "launch",
+            "mainClass": "FactorialAndCombination",
+            "projectName": "Computer-Science_e7279258"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MobilePhones",
             "request": "launch",
             "mainClass": "MobilePhones",

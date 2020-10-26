@@ -8,6 +8,7 @@ public class FactorialAndCombination {
         System.out.println("Do you want to calculate Factorial or Combination or Binomial or Pascal?");
         Scanner scann = new Scanner(System.in);
         String input = scann.nextLine();
+
         if (input.equals("Factorial")){
             System.out.println("Type in a number of terms");
             scann = new Scanner(System.in);
@@ -35,8 +36,6 @@ public class FactorialAndCombination {
             PascalTriangle(n);
         }
         else System.out.println("Error, wrong input");
-
-        
     }
 
     static int Factorial(int n){

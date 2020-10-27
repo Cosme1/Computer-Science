@@ -36,6 +36,6 @@ public class Bus {
     }
 
     public String toString(){
-        return ("The bus id is " + id + " and it goes through Routenumber " + busRoute);
+        return ("The bus id is " + id + ". " + busRoute);
     }
 }

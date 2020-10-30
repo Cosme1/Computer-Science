@@ -13,6 +13,7 @@ public class BusDriver {
         buses[2] = new Bus(1014, "H Lee", new BusRoute(411, "Queenstown"));
         buses[3] = new Bus(1015, "K Peters", new BusRoute(319, "Jamaica Street"));
         showBusDrivers(buses, 1010);
+        System.out.println("Number of buses: ");
         PrintBusInfo(buses);
         System.out.println(DRIVERS);
     }

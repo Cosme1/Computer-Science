@@ -24,7 +24,7 @@ public class BusDriver {
                 break;
             }
             else if (b[i].getID() <= n){
-                System.out.println(b[i]. getDriver());
+                System.out.println(b[i].getDriver());
             }
             DRIVERS++;
         }

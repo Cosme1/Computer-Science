@@ -1,8 +1,8 @@
 package Shapes;
 
-public class Rectangle {
-    double width;
-    double length;
+public class Rectangle extends Shape {
+    private double width;
+    private double length;
 
     public Rectangle(){
         this.width = 1.0;
@@ -39,6 +39,6 @@ public class Rectangle {
     }
 
     public String toString(){
-        return("A Rectangle with width " + getWidth() + " and length " + getLength() + ", which is a subclass of ");
+        return("A Rectangle with width " + getWidth() + " and length " + getLength() + ", which is a subclass of " + super.toString());
     }
 }

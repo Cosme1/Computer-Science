@@ -1,7 +1,7 @@
 package Shapes;
 
 public class Circle extends Shape {
-    double radius;
+    private double radius;
 
     public Circle(){
         this.radius = 1.0;
@@ -32,6 +32,6 @@ public class Circle extends Shape {
     }
 
     public String toString(){
-        return("A Circle with radius " + getRadius() + ", which is a subclass of ");
+        return("A Circle with radius " + getRadius() + ", which is a subclass of " + super.toString());
     }
 }

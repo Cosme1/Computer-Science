@@ -6,7 +6,7 @@ public class Rectangle extends Shape {
 
     public Rectangle(){
         this.width = 1.0;
-        this.length = 1.0;
+        this.length = 2.0;
     }
 
     public Rectangle(double width, double length){
@@ -39,6 +39,6 @@ public class Rectangle extends Shape {
     }
 
     public String toString(){
-        return("A Rectangle with width " + getWidth() + " and length " + getLength() + ", which is a subclass of " + super.toString());
+        return("A Rectangle with width " + getWidth() + " and length " + getLength() + " and an area of " + getArea() + ", which is a subclass of " + super.toString());
     }
 }

@@ -5,6 +5,7 @@ public class driver {
         Shape rectangle1 = new Rectangle();
         Shape circle1 = new Circle();
         Shape square1 = new Square();
+        Shape cylinder = new Cylinder();
         System.out.println("");
         System.out.println("---------Circle----------");
         System.out.println(circle1.toString());
@@ -14,7 +15,8 @@ public class driver {
         System.out.println(rectangle1.getArea());
         System.out.println("---------Square----------");
         System.out.println(square1.toString());
-        
+        System.out.println("---------Cylinder----------");
+        System.out.println(cylinder.toString());
         
         
     }

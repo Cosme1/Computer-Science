@@ -31,11 +31,15 @@ public class Cylinder extends Circle{
         this.height = height;
     }
 
-    public double getArea(){
+    public double getVolume(){
         return(Math.PI * super.getRadius() * super.getRadius() * height);
     }
 
+    public double getArea(){
+        return(2 * (Math.PI * super.getRadius() * super.getRadius()) + 2 * (Math.PI * super.getRadius() * height));
+    }
+
     public String toString(){
-        return("A Cylinder with radius " + getRadius() + " and an area of " + getArea() + ", which is a subclass of " + super.toString() + ". Cylinder has the height of " + getHeight() + ", and the color " + getColor() + ".");
+        return("A Cylinder with radius " + getRadius() + " and a volume of " + getVolume() + ", and surface area of " + getArea() + " , which is a subclass of " + super.toString() + ". Cylinder has the height of " + getHeight() + ", and the color " + getColor() + ".");
     }
 }

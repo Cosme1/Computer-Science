@@ -5,7 +5,7 @@ import ipaddress
 PORT = 9090
 
 server = socket.socket()
-server.bind(('', PORT))
+server.bind(('127.0.0.1', PORT))
 
 server.listen()
 

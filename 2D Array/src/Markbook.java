@@ -13,6 +13,7 @@ public class Markbook {
         char studentName[] = {'A', 'B', 'C', 'D', 'E'};
         double testAverage[] = new double[5];
         double testTotal = 0;
+        char studentGrade[] = new char[5];
         for (int column = 0; column < 5; column++){
             for (int row = 0; row < 5; row ++){
                 total = total + marksbook[column][row];
@@ -30,6 +31,24 @@ public class Markbook {
             testAverage[column] =testTotal/5;
             testTotal = 0;
         }
+        for (int i = 0; i < 5; i++){
+            if (studentAverage[i] > 85){
+                studentGrade[i] = 'A';
+            }
+            else if (studentAverage[i] > 70 && studentAverage[i] < 85){
+                studentGrade[i] = 'B';
+            }
+            else if (studentAverage[i] > 55 && studentAverage[i] < 70){
+                studentGrade[i] = 'C';
+            }
+            else if (studentAverage[i] > 40 && studentAverage[i] < 55) {
+                studentGrade[i] = 'D';
+            }
+            else {
+                studentGrade[i] = 'F';
+            }
+        }
+
         average = total/ counter;
         System.out.println("\nOverall average: " + average + "\n");
         for (int i = 0; i < 5; i++){
@@ -38,6 +57,10 @@ public class Markbook {
         System.out.println();
         for  (int i = 0; i < 5; i++){
             System.out.println("Average mark for Test " + (i+1) + " is " + testAverage[i]);
+        }
+        System.out.println();
+        for (int i = 0; i < 5; i++){
+            System.out.println("Student " + studentName[i] + " got the Grade " + studentGrade[i]);
         }
     }
 }

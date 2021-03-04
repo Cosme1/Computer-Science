@@ -14,7 +14,16 @@ public class LinkedList{
     }
 
     public void addHead(int val) {
-        //To Do
+        Node new_Node = new Node(val);
+        if (head == null){
+            head = new_Node;
+        } else {
+            Node last = head;
+            while (head != null) {
+                head = last.getNext();
+            }
+            last = new_Node;
+        }
     }
 
     public void addSorted(int val) {
@@ -28,13 +37,21 @@ public class LinkedList{
     }
 
     public int get(int index) {
-        //To Do
-        return 0;
+        Node current = head;
+        for (int i = 0; i <= index; i++){
+            current.getNext();
+        }
+        return current.getValue();
+        
     }
 
-    public boolean remove(int index) {
-        //To Do
-        return false;
+    public void remove(int index) {
+        Node current = head;
+        for (int i = 0; i < index; i++){
+            current.getNext();
+        }
+        Node next = current.getNext().getNext();
+        current.setNext(next);
     }
 
     public int size() {

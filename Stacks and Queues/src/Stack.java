@@ -2,6 +2,7 @@ import java.util.LinkedList;
 
 public class Stack {
 	private LinkedList list;
+	private Object item;
 
 	public Stack() {
 		list = new LinkedList();
@@ -16,9 +17,9 @@ public class Stack {
 	}
 
 	public Object pop() {
-		
-		Object item = list.get(list.size());
-		list.remove(list.size());
-		return item;
+
+		Object top = list.getLast();
+		list.removeLast();
+		return top;
 	}
 }

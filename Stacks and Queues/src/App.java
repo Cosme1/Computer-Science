@@ -5,11 +5,12 @@ public class App {
         String buildstack[] = new String[100];
         String buildqueue[] = new String[100];
 
-        for (int i = 1; i < buildstack.length; i++){
+        for (int i = 0; i < buildstack.length; i++){
             stack.push("Person " + i);
-            System.out.println(stack.pop());
         }
 
-        
+        for (int i = 0; i < buildstack.length; i++){
+            System.out.println(stack.pop());
+        }
     }
 }

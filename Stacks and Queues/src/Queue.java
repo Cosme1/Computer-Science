@@ -15,6 +15,12 @@ public class Queue {
         list.add(item);
     }
 
+    public Object dequeue(){
+        Object item = list.get(0);
+        list.remove(0);
+        return item;
+    }
+
     public Object peek() {
         return list.get(0);
     }

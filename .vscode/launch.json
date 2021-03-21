@@ -13,62 +13,6 @@
         },
         {
             "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "Computer-Science_ae05ef2f"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - FactorialAndCombination",
-            "request": "launch",
-            "mainClass": "FactorialAndCombination",
-            "projectName": "Computer-Science_e7279258"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MobilePhones",
-            "request": "launch",
-            "mainClass": "MobilePhones",
-            "projectName": "Computer-Science_29728a41"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - power",
-            "request": "launch",
-            "mainClass": "power",
-            "projectName": "Computer-Science_29728a41"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch) - Current File",
-            "request": "launch",
-            "console": "integratedTerminal",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-Circle<Computer-Science_29728a41>",
-            "request": "launch",
-            "mainClass": "Circle",
-            "projectName": "Computer-Science_29728a41"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-GeometricSequence<Computer-Science_29728a41>",
-            "request": "launch",
-            "mainClass": "GeometricSequence",
-            "projectName": "Computer-Science_29728a41"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-QuadraticSequence<Computer-Science_29728a41>",
-            "request": "launch",
-            "mainClass": "QuadraticSequence",
-            "projectName": "Computer-Science_29728a41"
-        },
-        {
-            "type": "java",
             "name": "Debug (Launch)-GroupChat",
             "request": "launch",
             "mainClass": "GroupChat"

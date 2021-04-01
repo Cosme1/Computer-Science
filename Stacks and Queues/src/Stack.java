@@ -22,4 +22,8 @@ public class Stack {
 		list.removeLast();
 		return top;
 	}
+
+	public Object peek(){
+		return list.getLast();
+	}
 }

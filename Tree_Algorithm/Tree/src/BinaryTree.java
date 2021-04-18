@@ -50,24 +50,35 @@ public class BinaryTree
     // preorder traversal : left-root-right
 	public List<Object> inOrderTraversal()
 	{
-      return null;
-
+      List<Object> list = new ArrayList();
+      inOrderTraversal(root, list);
+      return list;
 	}
 
 	private void inOrderTraversal(TreeNode tree, List<Object> list)
 	{
-
+      if (tree != null) {
+         inOrderTraversal(tree.getLeft(), list);
+         list.add(tree.getValue());
+         inOrderTraversal(tree.getRight(), list);
+      }
 	}
 
 	// preorder traversal : left-right-root
 	public List<Object> postOrderTraversal()
 	{
-		return null;
+		List<Object> list = new ArrayList();
+      postOrderTraversal(root, list);
+      return list;
 	}
 
 	private void postOrderTraversal(TreeNode tree, List<Object> list)
 	{
-
+      if (tree != null){
+         postOrderTraversal(tree.getLeft(), list);
+         postOrderTraversal(tree.getRight(), list);
+         list.add(tree.getValue());
+      }
 	}
 
 

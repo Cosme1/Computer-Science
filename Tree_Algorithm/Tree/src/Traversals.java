@@ -3,6 +3,7 @@ public class Traversals
 	public static void main(String[] args)
 	{
 		BinaryTree tree = new BinaryTree();
+        TreeCount count = new TreeCount();
 
 		tree.add("D");
         tree.add("B");
@@ -33,5 +34,23 @@ public class Traversals
         System.out.println("===================");
 
         System.out.println(tree.postOrderTraversal());
+
+        System.out.println();
+        System.out.println("Tree Count");
+        System.out.println("===================");
+
+        System.out.println(count.numNodes());
+
+        System.out.println();
+        System.out.println("Leaves Count");
+        System.out.println("===================");
+
+        System.out.println(count.numLeaves());
+
+        System.out.println();
+        System.out.println("Parents Count");
+        System.out.println("===================");
+
+        System.out.println(count.numParents());
 	}
 }
